@@ -85,5 +85,6 @@ public class test{
             }
         }
         System.out.println(minOps);
+        sc.close();
     }
 }

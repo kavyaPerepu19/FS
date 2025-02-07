@@ -86,6 +86,6 @@ public class test{
         }
         
         System.out.println(max_len);
-        
+        sc.close();
     }
 }

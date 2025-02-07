@@ -55,7 +55,7 @@
 // −1000 ≤ nums[i] ≤ 1000
 
 import java.util.*;
-public class test{
+public class P1{
     public static long slide(int a[],int k){
         long minPos = Integer.MAX_VALUE;
         long p = 1;
@@ -102,5 +102,6 @@ public class test{
         else{
             System.out.println(res);
         }
+        sc.close();
     }
 }
