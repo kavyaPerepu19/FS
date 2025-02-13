@@ -29,7 +29,7 @@
 // There are 7 substrings of size 3: "aab", "aba", "bab", "abc", "bca", "cab", and "abc".
 // The good substrings are "abc", "bca", "cab", and "abc".
 
-package A1.CP_DAY4;
+
 
 import java.util.*;
 public class GoodStrings{

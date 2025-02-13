@@ -62,7 +62,7 @@
 // -> blocks[i] is either 'W' or 'B'.
 // -> 1 <= k <= n
 
-package A1.CP_DAY4;
+
 
 import java.util.*;
 public class Recolor{

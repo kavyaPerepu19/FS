@@ -51,7 +51,7 @@
 
 
 
-package A1.CP_DAY4;
+
 
 import java.util.*;
 public class FlexibleSW{

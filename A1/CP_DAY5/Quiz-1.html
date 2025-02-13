@@ -1,0 +1,1158 @@
+
+<style>
+    /* Add your custom styles for menu items */
+    .custom-menu-item {
+        /* Your styling properties here */
+        margin: 5px;
+        padding: 10px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* Style the logout item differently */
+    .custom-menu-item-logout {
+        /* Your styling properties for the logout item */
+        color: #ff0000; /* Red color for logout item */
+    }
+</style>
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Quiz-1</title>
+    <link rel="shortcut icon" href="http://10.11.52.100/theme/image.php/boost/theme/1733729919/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Quiz-1" />
+<link rel="stylesheet" type="text/css" href="http://10.11.52.100/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://10.11.52.100/theme/styles.php/boost/1733729919_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/10.11.52.100","homeurl":{},"sesskey":"nO2tqMV9JQ","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1733729919","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1733729919","admin":"admin","svgicons":true,"usertimezone":"Asia\/Kolkata","courseId":1700,"courseContextId":6133,"contextid":6383,"contextInstanceId":977,"langrev":1733729919,"templaterev":"1733729919","developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":true,"base":"http:\/\/10.11.52.100\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/10.11.52.100\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/10.11.52.100\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/10.11.52.100\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/10.11.52.100\/theme\/yui_combo.php?m\/1733729919\/","combine":true,"comboBase":"http:\/\/10.11.52.100\/theme\/yui_combo.php?","ext":false,"root":"m\/1733729919\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/10.11.52.100\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/10.11.52.100\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1733729919\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-mod-quiz-attempt" class="format-topics limitedwidth  path-mod path-mod-quiz chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam 10-11-52-100 pagelayout-incourse course-1700 context-6383 cmid-977 cm-type-quiz category-15 uses-drawers drawer-open-index">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="http://10.11.52.100/lib/javascript.php/1733729919/lib/polyfills/polyfill.js"></script>
+<script src="http://10.11.52.100/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js"></script><script src="http://10.11.52.100/lib/javascript.php/1733729919/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Site navigation">
+    
+        <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only">Side panel</span>
+        </button>
+    
+        <a href="http://10.11.52.100/my/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+    
+                <img src="http://10.11.52.100/pix/toofanlogo.png" class="logo mr-1" alt="KMIT-TOOFAAN">
+        </a>
+            <div class="primary-navigation">
+                <nav class="moremenu navigation">
+                    <ul id="moremenu-67ac827c0cc62-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Home
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/dashboard.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Dashboard
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/assignments.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Assignments
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/completedtasks.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Completed Tasks
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/reports.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Reports
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/api.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                API Reference
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/studymaterial.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Study Material
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/local/student/feedback.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Feedback
+                                            </a>
+                                </li>
+                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                                            <a role="menuitem" class="nav-link  "
+                                                href="http://10.11.52.100/calendar/view.php"
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Calendar
+                                            </a>
+                                </li>
+                        <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                            <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-67ac827c0cc62" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-67ac827c0cc62" role="menu">
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+        <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+            <!-- page_heading_menu -->
+            
+        </ul>
+    
+        <div id="usernavigation" class="navbar-nav ml-auto">
+            
+            <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                    
+                    <div class="usermenu">
+                            <!-- Render the user action menu items without the dropdown -->
+                            <div id="user-action-menu" class="h-100">
+                                <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                    <div class="carousel-inner">
+                                        <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+                                                <div class="dropdown-divider"></div>
+                                                    <a href="http://10.11.52.100/login/logout.php?sesskey=nO2tqMV9JQ" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                            
+                                                        Log out (PEREPU KRISHNA KAVYA SRI KMIT)
+                                                    </a>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+
+<div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+    <div class="drawerheader">
+        <button
+            class="btn drawertoggle icon-no-margin hidden"
+            data-toggler="drawers"
+            data-action="closedrawer"
+            data-target="theme_boost-drawers-primary"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Close drawer"
+        >
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
+        </button>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="http://10.11.52.100/" class="list-group-item list-group-item-action  " >
+                    Home
+                </a>
+                <a href="http://10.11.52.100/local/student/dashboard.php" class="list-group-item list-group-item-action  " >
+                    Dashboard
+                </a>
+                <a href="http://10.11.52.100/local/student/assignments.php" class="list-group-item list-group-item-action  " >
+                    Assignments
+                </a>
+                <a href="http://10.11.52.100/local/student/completedtasks.php" class="list-group-item list-group-item-action  " >
+                    Completed Tasks
+                </a>
+                <a href="http://10.11.52.100/local/student/reports.php" class="list-group-item list-group-item-action  " >
+                    Reports
+                </a>
+                <a href="http://10.11.52.100/local/student/api.php" class="list-group-item list-group-item-action  " >
+                    API Reference
+                </a>
+                <a href="http://10.11.52.100/local/student/studymaterial.php" class="list-group-item list-group-item-action  " >
+                    Study Material
+                </a>
+                <a href="http://10.11.52.100/local/student/feedback.php" class="list-group-item list-group-item-action  " >
+                    Feedback
+                </a>
+                <a href="http://10.11.52.100/calendar/view.php" class="list-group-item list-group-item-action  " >
+                    Calendar
+                </a>
+        </div>
+
+    </div>
+</div>
+        <div  class="drawer drawer-right d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-blocks" data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen="" data-close-on-resize="1">
+    <div class="drawerheader">
+        <button
+            class="btn drawertoggle icon-no-margin hidden"
+            data-toggler="drawers"
+            data-action="closedrawer"
+            data-target="theme_boost-drawers-blocks"
+            data-toggle="tooltip"
+            data-placement="left"
+            title="Close block drawer"
+        >
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
+        </button>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                        <section class="d-print-none" aria-label="Blocks">
+                    
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip Quiz navigation</a>
+
+<section id="mod_quiz_navblock"
+     class=" block block_fake  card mb-3"
+     role="navigation"
+     data-block="_fake"
+     data-instance-id="fakeid-67ac827c040b1"
+          aria-labelledby="instance-fakeid-67ac827c040b1-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-fakeid-67ac827c040b1-header" class="card-title" style=" background-color: #012951;color: white;height: 30px;margin:-17px; padding-left:15px;margin-bottom:1px;padding-top:4px;">Quiz navigation</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="quiznojswarning">Warning: these links will not save your answers. Use the next button at the bottom of the page.</div><div class="qn_buttons clearfix multipages"><a class="qnbutton answersaved free btn thispage" id="quiznavbutton7" title="Answer saved" data-quiz-page="0" href="#question-17126-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton17" title="Answer saved" data-quiz-page="0" href="#question-17126-17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage flagged" id="quiznavbutton18" title="Answer saved" data-quiz-page="0" href="#question-17126-18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton11" title="Answer saved" data-quiz-page="0" href="#question-17126-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton19" title="Answer saved" data-quiz-page="0" href="#question-17126-19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton10" title="Answer saved" data-quiz-page="0" href="#question-17126-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton2" title="Answer saved" data-quiz-page="0" href="#question-17126-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton8" title="Answer saved" data-quiz-page="0" href="#question-17126-8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton14" title="Answer saved" data-quiz-page="0" href="#question-17126-14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton12" title="Answer saved" data-quiz-page="0" href="#question-17126-12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton6" title="Answer saved" data-quiz-page="0" href="#question-17126-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton3" title="Answer saved" data-quiz-page="0" href="#question-17126-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>12<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton1" title="Answer saved" data-quiz-page="0" href="#question-17126-1"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>13<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton4" title="Answer saved" data-quiz-page="0" href="#question-17126-4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>14<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton5" title="Answer saved" data-quiz-page="0" href="#question-17126-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>15<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton13" title="Answer saved" data-quiz-page="0" href="#question-17126-13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>16<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton16" title="Answer saved" data-quiz-page="0" href="#question-17126-16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>17<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton15" title="Answer saved" data-quiz-page="0" href="#question-17126-15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>18<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton answersaved free btn thispage" id="quiznavbutton20" title="Answer saved" data-quiz-page="0" href="#question-17126-20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>19<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn thispage" id="quiznavbutton9" title="Not yet answered" data-quiz-page="0" href="#question-17126-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>20<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a class="endtestlink aalink" href="http://10.11.52.100/mod/quiz/summary.php?attempt=17060&amp;cmid=977">Finish attempt ...</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+
+    </div>
+</div>
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+                    <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
+                        <button
+                            class="btn icon-no-margin"
+                            data-toggler="drawers"
+                            data-action="toggle"
+                            data-target="theme_boost-drawers-blocks"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="Open block drawer"
+                        >
+                            <span class="sr-only">Open block drawer</span>
+                            <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                        </button>
+                    </div>
+            </div>
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="http://10.11.52.100/my/"  >Dashboard</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="http://10.11.52.100/course/view.php?id=1700#section-5"  title="FS-A1-2026">FS-A1-2026</a>
+                </li>
+        
+                <li class="breadcrumb-item"><span>Quiz-1</span></li>
+        </ol>
+</nav>
+            </div>
+            <div class="ml-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-image mr-2"><div class="assessment activityiconcontainer modicon_quiz"><img class="icon activityicon " aria-hidden="true" src="http://10.11.52.100/theme/image.php/boost/quiz/1733729919/monologo?filtericon=1" alt="" /></div></div><div class="page-header-headings"><h1 class="h2">Quiz-1</h1></div></div>
+                    </div>
+            <div class="header-actions-container ml-auto" data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    <section id="region-main" aria-label="Content">
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                            <div class="activity-header" data-for="page-activity-header"></div>
+                        <div role="main"><div class="container-fluid tertiary-navigation"><div class="row"><div class="navitem"><a class="btn btn-secondary" href="http://10.11.52.100/mod/quiz/view.php?id=977">Back</a></div></div></div><div id="quiz-timer-wrapper" class="mb-2">
+    <div id="quiz-timer" class="quiz-timer-inner py-1 px-2 ml-auto" role="timer" aria-atomic="true" aria-relevant="text">
+        Time left
+        <span id="quiz-time-left"></span>
+    </div>
+</div><form action="http://10.11.52.100/mod/quiz/processattempt.php?cmid=977" method="post" enctype="multipart/form-data" accept-charset="utf-8" id="responseform"><div><div id="question-17126-7" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:7_:flagged" value="0" /><input type="hidden" value="qaid=203358&amp;qubaid=17126&amp;qid=4195&amp;slot=7&amp;checksum=c11e9bf143b3c18d57eadb2dd147db88&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:7_:flaggedcheckbox" name="q17126:7_:flagged" value="1" /><label id="q17126:7_:flaggedlabel" for="q17126:7_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:7_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:7_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public
+static void main(String[] args){</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test
+t=new Test();</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(1);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected
+void finalize(){</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("
+"+2);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 1</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:7_answer" value="0" id="q17126:7_answer0" aria-labelledby="q17126:7_answer0_label" /><div class="d-flex w-auto" id="q17126:7_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">2</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:7_answer" value="1" id="q17126:7_answer1" aria-labelledby="q17126:7_answer1_label" /><div class="d-flex w-auto" id="q17126:7_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">1</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:7_answer" value="2" id="q17126:7_answer2" aria-labelledby="q17126:7_answer2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:7_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:7_answer" value="3" id="q17126:7_answer3" aria-labelledby="q17126:7_answer3_label" /><div class="d-flex w-auto" id="q17126:7_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">2 1</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:7_answer" value="4" id="q17126:7_answer4" aria-labelledby="q17126:7_answer4_label" /><div class="d-flex w-auto" id="q17126:7_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">1 2</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:7_answer" value="5" id="q17126:7_answer5" aria-labelledby="q17126:7_answer5_label" /><div class="d-flex w-auto" id="q17126:7_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Can’t predict the output</span><br></p></div></div> </div>
+</div><div id="q17126:7_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:7_answer" id="q17126:7_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:7_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-17" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:17_:flagged" value="0" /><input type="hidden" value="qaid=203368&amp;qubaid=17126&amp;qid=4205&amp;slot=17&amp;checksum=b3c191a1b3d4442f0303e5aabe10c499&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:17_:flaggedcheckbox" name="q17126:17_:flagged" value="1" /><label id="q17126:17_:flaggedlabel" for="q17126:17_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:17_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:17_:sequencecheck" value="1" /><div class="qtext">class Test {
+public static void main(String [] args) {
+int year;                                 //Line-3 
+int day;                                  //Line-4
+year = 2050;                         //Line-5
+System.out.println(year);  //Line-6
+}
+}</div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 2</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:17_answer" value="0" id="q17126:17_answer0" aria-labelledby="q17126:17_answer0_label" /><div class="d-flex w-auto" id="q17126:17_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1">0</div></div> </div>
+<div class="r1"><input type="radio" name="q17126:17_answer" value="1" id="q17126:17_answer1" aria-labelledby="q17126:17_answer1_label" /><div class="d-flex w-auto" id="q17126:17_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1">Compilation fails at Line-3</div></div> </div>
+<div class="r0"><input type="radio" name="q17126:17_answer" value="2" id="q17126:17_answer2" aria-labelledby="q17126:17_answer2_label" /><div class="d-flex w-auto" id="q17126:17_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run
+time exception</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:17_answer" value="3" id="q17126:17_answer3" aria-labelledby="q17126:17_answer3_label" checked="checked" /><div class="d-flex w-auto" id="q17126:17_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1">2050</div></div> </div>
+<div class="r0"><input type="radio" name="q17126:17_answer" value="4" id="q17126:17_answer4" aria-labelledby="q17126:17_answer4_label" /><div class="d-flex w-auto" id="q17126:17_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at Line-5</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:17_answer" value="5" id="q17126:17_answer5" aria-labelledby="q17126:17_answer5_label" /><div class="d-flex w-auto" id="q17126:17_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at Line-4</span><br></p></div></div> </div>
+</div><div id="q17126:17_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:17_answer" id="q17126:17_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:17_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-18" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:18_:flagged" value="0" /><input type="hidden" value="qaid=203369&amp;qubaid=17126&amp;qid=4206&amp;slot=18&amp;checksum=0e28d86f7eac0f7c3cb52499659a9bba&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:18_:flaggedcheckbox" name="q17126:18_:flagged" value="1" checked="checked" /><label id="q17126:18_:flaggedlabel" for="q17126:18_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/flagged" alt="" class="questionflagimage" id="q17126:18_:flaggedimg" /><span>Remove flag</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:18_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test {</span></p>
+
+<p><span lang="EN-US">public static void main(String [] args) {</span></p>
+
+<p><span lang="EN-US">int x=1;</span></p>
+
+<p><span lang="EN-US">if(x)</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println("A");&nbsp;
+</span></p>
+
+<p><span lang="EN-US">else</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println("B");&nbsp;
+</span></p>
+
+<p><span lang="EN-US">}</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 3</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:18_answer" value="0" id="q17126:18_answer0" aria-labelledby="q17126:18_answer0_label" /><div class="d-flex w-auto" id="q17126:18_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">A</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:18_answer" value="1" id="q17126:18_answer1" aria-labelledby="q17126:18_answer1_label" /><div class="d-flex w-auto" id="q17126:18_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">B</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:18_answer" value="2" id="q17126:18_answer2" aria-labelledby="q17126:18_answer2_label" /><div class="d-flex w-auto" id="q17126:18_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run
+time exception</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:18_answer" value="3" id="q17126:18_answer3" aria-labelledby="q17126:18_answer3_label" checked="checked" /><div class="d-flex w-auto" id="q17126:18_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails</span><br></p></div></div> </div>
+</div><div id="q17126:18_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:18_answer" id="q17126:18_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:18_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-11" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:11_:flagged" value="0" /><input type="hidden" value="qaid=203362&amp;qubaid=17126&amp;qid=4199&amp;slot=11&amp;checksum=ccc60f8f339a5a49a01443e68b4d9635&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:11_:flaggedcheckbox" name="q17126:11_:flagged" value="1" /><label id="q17126:11_:flaggedlabel" for="q17126:11_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:11_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:11_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test </span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public
+static void main(String[] args) </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; short
+a=0;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(;a&lt;10;a++)</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; a=a+6;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(a);</span></p>
+
+<p><span lang="EN-US">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 4</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:11_answer" value="0" id="q17126:11_answer0" aria-labelledby="q17126:11_answer0_label" /><div class="d-flex w-auto" id="q17126:11_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">0</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:11_answer" value="1" id="q17126:11_answer1" aria-labelledby="q17126:11_answer1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:11_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:11_answer" value="2" id="q17126:11_answer2" aria-labelledby="q17126:11_answer2_label" /><div class="d-flex w-auto" id="q17126:11_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run
+time exception</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:11_answer" value="3" id="q17126:11_answer3" aria-labelledby="q17126:11_answer3_label" /><div class="d-flex w-auto" id="q17126:11_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">14</span><br></p></div></div> </div>
+</div><div id="q17126:11_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:11_answer" id="q17126:11_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:11_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-19" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:19_:flagged" value="0" /><input type="hidden" value="qaid=203370&amp;qubaid=17126&amp;qid=4207&amp;slot=19&amp;checksum=9022b35ca7657a9bfedc4970fec7c7ac&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:19_:flaggedcheckbox" name="q17126:19_:flagged" value="1" /><label id="q17126:19_:flaggedlabel" for="q17126:19_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:19_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:19_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; public
+static void main(String [] args) {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String
+x="abc";</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; switch(x){&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//Line-4</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case
+"abc" :&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Line-5</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("1");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;//Line-6</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case
+"def" :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//Line-7</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; System.out.println("2");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Line-8</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 5</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:19_answer" value="0" id="q17126:19_answer0" aria-labelledby="q17126:19_answer0_label" /><div class="d-flex w-auto" id="q17126:19_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">1</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:19_answer" value="1" id="q17126:19_answer1" aria-labelledby="q17126:19_answer1_label" /><div class="d-flex w-auto" id="q17126:19_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><span lang="EN-US">Compilation
+fails Line-4</span></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:19_answer" value="2" id="q17126:19_answer2" aria-labelledby="q17126:19_answer2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:19_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p></p>1<br>2<br><p></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:19_answer" value="3" id="q17126:19_answer3" aria-labelledby="q17126:19_answer3_label" /><div class="d-flex w-auto" id="q17126:19_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails Line-8</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:19_answer" value="4" id="q17126:19_answer4" aria-labelledby="q17126:19_answer4_label" /><div class="d-flex w-auto" id="q17126:19_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails Line-6</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:19_answer" value="5" id="q17126:19_answer5" aria-labelledby="q17126:19_answer5_label" /><div class="d-flex w-auto" id="q17126:19_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails Line-7</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:19_answer" value="6" id="q17126:19_answer6" aria-labelledby="q17126:19_answer6_label" /><div class="d-flex w-auto" id="q17126:19_answer6_label" data-region="answer-label"><span class="answernumber">g. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">2</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:19_answer" value="7" id="q17126:19_answer7" aria-labelledby="q17126:19_answer7_label" /><div class="d-flex w-auto" id="q17126:19_answer7_label" data-region="answer-label"><span class="answernumber">h. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails Line-5</span><br></p></div></div> </div>
+</div><div id="q17126:19_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:19_answer" id="q17126:19_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:19_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-10" class="que multichoiceset deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:10_:flagged" value="0" /><input type="hidden" value="qaid=203361&amp;qubaid=17126&amp;qid=4198&amp;slot=10&amp;checksum=3f26dc0a03836cf6bc294b94449652c8&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:10_:flaggedcheckbox" name="q17126:10_:flagged" value="1" /><label id="q17126:10_:flaggedlabel" for="q17126:10_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:10_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:10_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">Which of the following legally fill in
+the blank so you can run the main() method from the</span></p>
+
+<p><span lang="EN-US">command line? (Choose all that apply)</span></p>
+
+<p><span lang="EN-US">class Test</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public
+static void main(String _Names[]){}</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 6</span> Answer</legend><div class="answer"><div class="r0"><input type="hidden" name="q17126:10_choice0" value="0" /><input type="checkbox" name="q17126:10_choice0" value="1" id="q17126:10_choice0" aria-labelledby="q17126:10_choice0_label" /><div class="d-flex w-auto" id="q17126:10_choice0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String names</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:10_choice1" value="0" /><input type="checkbox" name="q17126:10_choice1" value="1" id="q17126:10_choice1" aria-labelledby="q17126:10_choice1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:10_choice1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String _Names[]</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:10_choice2" value="0" /><input type="checkbox" name="q17126:10_choice2" value="1" id="q17126:10_choice2" aria-labelledby="q17126:10_choice2_label" /><div class="d-flex w-auto" id="q17126:10_choice2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">None of the these.</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:10_choice3" value="0" /><input type="checkbox" name="q17126:10_choice3" value="1" id="q17126:10_choice3" aria-labelledby="q17126:10_choice3_label" checked="checked" /><div class="d-flex w-auto" id="q17126:10_choice3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String... $n</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:10_choice4" value="0" /><input type="checkbox" name="q17126:10_choice4" value="1" id="q17126:10_choice4" aria-labelledby="q17126:10_choice4_label" checked="checked" /><div class="d-flex w-auto" id="q17126:10_choice4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String[] _names</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:10_choice5" value="0" /><input type="checkbox" name="q17126:10_choice5" value="1" id="q17126:10_choice5" aria-labelledby="q17126:10_choice5_label" /><div class="d-flex w-auto" id="q17126:10_choice5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String[] 123</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:10_choice6" value="0" /><input type="checkbox" name="q17126:10_choice6" value="1" id="q17126:10_choice6" aria-labelledby="q17126:10_choice6_label" checked="checked" /><div class="d-flex w-auto" id="q17126:10_choice6_label" data-region="answer-label"><span class="answernumber">g. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">String abc[]</span><br></p></div></div> </div>
+</div></fieldset></div></div></div><div id="question-17126-2" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:2_:flagged" value="0" /><input type="hidden" value="qaid=203353&amp;qubaid=17126&amp;qid=4190&amp;slot=2&amp;checksum=56b8712fda3c61c3bd7ff067c1c9034f&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:2_:flaggedcheckbox" name="q17126:2_:flagged" value="1" /><label id="q17126:2_:flaggedlabel" for="q17126:2_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:2_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:2_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Demo</span></p>
+
+<p><span lang="EN-US">&nbsp; {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;String title;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;int value; </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; public Demo() </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title += "
+class";</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; public Demo(int value)
+{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.value =
+value;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title =
+"Demo";</span></p>
+
+<p><span lang="EN-US">&nbsp;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">&nbsp;} </span></p>
+
+<p><span lang="EN-US">class&nbsp; Test {</span></p>
+
+<p><span lang="EN-US">&nbsp;public static void main
+(String args[]){</span></p>
+
+<p><span lang="EN-US">&nbsp;Demo d = new Demo(5);</span></p>
+
+<p><span lang="EN-US">&nbsp;System.out.println(d.title);
+</span></p>
+
+<p><span lang="EN-US">&nbsp;}</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 7</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:2_answer" value="0" id="q17126:2_answer0" aria-labelledby="q17126:2_answer0_label" /><div class="d-flex w-auto" id="q17126:2_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:2_answer" value="1" id="q17126:2_answer1" aria-labelledby="q17126:2_answer1_label" /><div class="d-flex w-auto" id="q17126:2_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Class</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:2_answer" value="2" id="q17126:2_answer2" aria-labelledby="q17126:2_answer2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:2_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Demo</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:2_answer" value="3" id="q17126:2_answer3" aria-labelledby="q17126:2_answer3_label" /><div class="d-flex w-auto" id="q17126:2_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Class
+Demo</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:2_answer" value="4" id="q17126:2_answer4" aria-labelledby="q17126:2_answer4_label" /><div class="d-flex w-auto" id="q17126:2_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p></p><span lang="EN-US">Demo
+class</span><br><p></p></div></div> </div>
+</div><div id="q17126:2_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:2_answer" id="q17126:2_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:2_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-8" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:8_:flagged" value="0" /><input type="hidden" value="qaid=203359&amp;qubaid=17126&amp;qid=4196&amp;slot=8&amp;checksum=fe1ee4513463bc6d9a8d16193e0a5aca&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:8_:flaggedcheckbox" name="q17126:8_:flagged" value="1" /><label id="q17126:8_:flaggedlabel" for="q17126:8_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:8_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:8_:sequencecheck" value="1" /><div class="qtext">What does the following code output?
+public class Test {
+ int count;
+  public void Test() {
+ count = 4;
+ }
+ public static void main(String[] args) {
+ Test s = new Test();
+ System.out.println(s.count);
+ } }</div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 8</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:8_answer" value="0" id="q17126:8_answer0" aria-labelledby="q17126:8_answer0_label" /><div class="d-flex w-auto" id="q17126:8_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails on line 8.</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:8_answer" value="1" id="q17126:8_answer1" aria-labelledby="q17126:8_answer1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:8_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">0</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:8_answer" value="2" id="q17126:8_answer2" aria-labelledby="q17126:8_answer2_label" /><div class="d-flex w-auto" id="q17126:8_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails on line 3.</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:8_answer" value="3" id="q17126:8_answer3" aria-labelledby="q17126:8_answer3_label" /><div class="d-flex w-auto" id="q17126:8_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails on line 7.</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:8_answer" value="4" id="q17126:8_answer4" aria-labelledby="q17126:8_answer4_label" /><div class="d-flex w-auto" id="q17126:8_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails on line 4.</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:8_answer" value="5" id="q17126:8_answer5" aria-labelledby="q17126:8_answer5_label" /><div class="d-flex w-auto" id="q17126:8_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">4</span><br></p></div></div> </div>
+</div><div id="q17126:8_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:8_answer" id="q17126:8_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:8_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-14" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:14_:flagged" value="0" /><input type="hidden" value="qaid=203365&amp;qubaid=17126&amp;qid=4202&amp;slot=14&amp;checksum=eec32babc6582fe7acc9cea977d700b4&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:14_:flaggedcheckbox" name="q17126:14_:flagged" value="1" /><label id="q17126:14_:flaggedlabel" for="q17126:14_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:14_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:14_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test </span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String s;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args) </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(new
+Test().s);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 9</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:14_answer" value="0" id="q17126:14_answer0" aria-labelledby="q17126:14_answer0_label" /><div class="d-flex w-auto" id="q17126:14_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">prints
+nothing</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:14_answer" value="1" id="q17126:14_answer1" aria-labelledby="q17126:14_answer1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:14_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">null</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:14_answer" value="2" id="q17126:14_answer2" aria-labelledby="q17126:14_answer2_label" /><div class="d-flex w-auto" id="q17126:14_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">compilation
+fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:14_answer" value="3" id="q17126:14_answer3" aria-labelledby="q17126:14_answer3_label" /><div class="d-flex w-auto" id="q17126:14_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">compiles
+but will not run</span><br></p></div></div> </div>
+</div><div id="q17126:14_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:14_answer" id="q17126:14_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:14_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-12" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:12_:flagged" value="0" /><input type="hidden" value="qaid=203363&amp;qubaid=17126&amp;qid=4200&amp;slot=12&amp;checksum=5d156fa127347d94a8f196dbf215ace6&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:12_:flaggedcheckbox" name="q17126:12_:flagged" value="1" /><label id="q17126:12_:flaggedlabel" for="q17126:12_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:12_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:12_:sequencecheck" value="1" /><div class="qtext">class Test 
+{
+     public static void main(String[] args) 
+{
+String s;
+System.out.println(s);
+ }
+}</div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 10</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:12_answer" value="0" id="q17126:12_answer0" aria-labelledby="q17126:12_answer0_label" checked="checked" /><div class="d-flex w-auto" id="q17126:12_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1">compilation fails</div></div> </div>
+<div class="r1"><input type="radio" name="q17126:12_answer" value="1" id="q17126:12_answer1" aria-labelledby="q17126:12_answer1_label" /><div class="d-flex w-auto" id="q17126:12_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1">null</div></div> </div>
+<div class="r0"><input type="radio" name="q17126:12_answer" value="2" id="q17126:12_answer2" aria-labelledby="q17126:12_answer2_label" /><div class="d-flex w-auto" id="q17126:12_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1">compiles but will not run</div></div> </div>
+<div class="r1"><input type="radio" name="q17126:12_answer" value="3" id="q17126:12_answer3" aria-labelledby="q17126:12_answer3_label" /><div class="d-flex w-auto" id="q17126:12_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1">prints nothing</div></div> </div>
+</div><div id="q17126:12_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:12_answer" id="q17126:12_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:12_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-6" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">11</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:6_:flagged" value="0" /><input type="hidden" value="qaid=203357&amp;qubaid=17126&amp;qid=4194&amp;slot=6&amp;checksum=a69762b50377f668f2f67cae457aae37&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:6_:flaggedcheckbox" name="q17126:6_:flagged" value="1" /><label id="q17126:6_:flaggedlabel" for="q17126:6_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:6_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:6_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class
+Test</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[]
+args){</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int x=10;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int y;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(x+y);</span></p>
+
+<p><span lang="EN-US">&nbsp;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 11</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:6_answer" value="0" id="q17126:6_answer0" aria-labelledby="q17126:6_answer0_label" /><div class="d-flex w-auto" id="q17126:6_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">0</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:6_answer" value="1" id="q17126:6_answer1" aria-labelledby="q17126:6_answer1_label" /><div class="d-flex w-auto" id="q17126:6_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run time exception</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:6_answer" value="2" id="q17126:6_answer2" aria-labelledby="q17126:6_answer2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:6_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:6_answer" value="3" id="q17126:6_answer3" aria-labelledby="q17126:6_answer3_label" /><div class="d-flex w-auto" id="q17126:6_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Garbage value</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:6_answer" value="4" id="q17126:6_answer4" aria-labelledby="q17126:6_answer4_label" /><div class="d-flex w-auto" id="q17126:6_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">10</span><br></p></div></div> </div>
+</div><div id="q17126:6_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:6_answer" id="q17126:6_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:6_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-3" class="que multichoiceset deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">12</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:3_:flagged" value="0" /><input type="hidden" value="qaid=203354&amp;qubaid=17126&amp;qid=4191&amp;slot=3&amp;checksum=04c386fe5e8fe8b6e1979d239c3a61a0&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:3_:flaggedcheckbox" name="q17126:3_:flagged" value="1" /><label id="q17126:3_:flaggedlabel" for="q17126:3_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:3_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:3_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">Which of the following are true?
+(Choose all that apply)</span></p>
+
+<p><span lang="EN-US">&nbsp;class Test</span></p>
+
+<p><span lang="EN-US">&nbsp;{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;public static void main(String[] args){</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; short numPets = 5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // line4</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;int numGrains = 5.6;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //line5</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;String name = "Scruffy"; //line6</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;numPets.length();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //line7</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numGrains.length();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //line8</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name.length();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //line9</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}</span></p>
+
+<p><span lang="EN-US">&nbsp;}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 12</span> Answer</legend><div class="answer"><div class="r0"><input type="hidden" name="q17126:3_choice0" value="0" /><input type="checkbox" name="q17126:3_choice0" value="1" id="q17126:3_choice0" aria-labelledby="q17126:3_choice0_label" checked="checked" /><div class="d-flex w-auto" id="q17126:3_choice0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 5 generates a compiler error.</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:3_choice1" value="0" /><input type="checkbox" name="q17126:3_choice1" value="1" id="q17126:3_choice1" aria-labelledby="q17126:3_choice1_label" /><div class="d-flex w-auto" id="q17126:3_choice1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">The code compiles as is.</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:3_choice2" value="0" /><input type="checkbox" name="q17126:3_choice2" value="1" id="q17126:3_choice2" aria-labelledby="q17126:3_choice2_label" /><div class="d-flex w-auto" id="q17126:3_choice2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 6 generates a compiler error.</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:3_choice3" value="0" /><input type="checkbox" name="q17126:3_choice3" value="1" id="q17126:3_choice3" aria-labelledby="q17126:3_choice3_label" checked="checked" /><div class="d-flex w-auto" id="q17126:3_choice3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 7 generates a compiler error.</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:3_choice4" value="0" /><input type="checkbox" name="q17126:3_choice4" value="1" id="q17126:3_choice4" aria-labelledby="q17126:3_choice4_label" /><div class="d-flex w-auto" id="q17126:3_choice4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 4 generates a compiler error.</span><br></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:3_choice5" value="0" /><input type="checkbox" name="q17126:3_choice5" value="1" id="q17126:3_choice5" aria-labelledby="q17126:3_choice5_label" checked="checked" /><div class="d-flex w-auto" id="q17126:3_choice5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 8 generates a compiler error.</span><br></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:3_choice6" value="0" /><input type="checkbox" name="q17126:3_choice6" value="1" id="q17126:3_choice6" aria-labelledby="q17126:3_choice6_label" /><div class="d-flex w-auto" id="q17126:3_choice6_label" data-region="answer-label"><span class="answernumber">g. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Line 9 generates a compiler error.</span><br></p></div></div> </div>
+</div></fieldset></div></div></div><div id="question-17126-1" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">13</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:1_:flagged" value="0" /><input type="hidden" value="qaid=203352&amp;qubaid=17126&amp;qid=4189&amp;slot=1&amp;checksum=4ff6afe84295d13c88b2a38a4637de79&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:1_:flaggedcheckbox" name="q17126:1_:flagged" value="1" /><label id="q17126:1_:flaggedlabel" for="q17126:1_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:1_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:1_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class T</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">private T(){</span></p>
+
+<p><span lang="EN-US">&nbsp;System.out.println("hello world");</span></p>
+
+<p><span lang="EN-US">}</span></p>
+
+<p><span lang="EN-US">public static void
+main(String args[])</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp; T t=new T();</span></p>
+
+<p><span lang="EN-US">&nbsp;}</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 13</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:1_answer" value="0" id="q17126:1_answer0" aria-labelledby="q17126:1_answer0_label" /><div class="d-flex w-auto" id="q17126:1_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">none of these</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:1_answer" value="1" id="q17126:1_answer1" aria-labelledby="q17126:1_answer1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:1_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">hello world</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:1_answer" value="2" id="q17126:1_answer2" aria-labelledby="q17126:1_answer2_label" /><div class="d-flex w-auto" id="q17126:1_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">compilation fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:1_answer" value="3" id="q17126:1_answer3" aria-labelledby="q17126:1_answer3_label" /><div class="d-flex w-auto" id="q17126:1_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">prints nothing</span><br></p></div></div> </div>
+</div><div id="q17126:1_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:1_answer" id="q17126:1_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:1_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-4" class="que multichoiceset deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">14</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:4_:flagged" value="0" /><input type="hidden" value="qaid=203355&amp;qubaid=17126&amp;qid=4192&amp;slot=4&amp;checksum=282caed668d0d14200ec2dc71b0a1e0f&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:4_:flaggedcheckbox" name="q17126:4_:flagged" value="1" /><label id="q17126:4_:flaggedlabel" for="q17126:4_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:4_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:4_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p>Suppose we have a class named Test. Which of the following statements are true?</p>
+
+<p>(Choose all that apply)</p>
+
+<p>&nbsp;</p>
+
+<p>1: public class Test {</p>
+
+<p>2: public static void main(String[]
+args) {</p>
+
+<p>3: Test one = new Test();</p>
+
+<p>4: Test two = new Test();</p>
+
+<p>5: Test three = one;</p>
+
+<p>6: one = null;</p>
+
+<p>7: Test four = one;</p>
+
+<p>8: three = null;</p>
+
+<p>9: two = null;</p>
+
+<p>10: two = new Test();</p>
+
+<p>11: System.gc();</p>
+
+<p>12: } }</p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 14</span> Answer</legend><div class="answer"><div class="r0"><input type="hidden" name="q17126:4_choice0" value="0" /><input type="checkbox" name="q17126:4_choice0" value="1" id="q17126:4_choice0" aria-labelledby="q17126:4_choice0_label" /><div class="d-flex w-auto" id="q17126:4_choice0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 3 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 6.</p><br><p></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:4_choice1" value="0" /><input type="checkbox" name="q17126:4_choice1" value="1" id="q17126:4_choice1" aria-labelledby="q17126:4_choice1_label" /><div class="d-flex w-auto" id="q17126:4_choice1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 3 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 12.</p><br><p></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:4_choice2" value="0" /><input type="checkbox" name="q17126:4_choice2" value="1" id="q17126:4_choice2" aria-labelledby="q17126:4_choice2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:4_choice2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 3 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 8.</p><br><p></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:4_choice3" value="0" /><input type="checkbox" name="q17126:4_choice3" value="1" id="q17126:4_choice3" aria-labelledby="q17126:4_choice3_label" /><div class="d-flex w-auto" id="q17126:4_choice3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 4 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 11.</p><br><p></p></div></div> </div>
+<div class="r0"><input type="hidden" name="q17126:4_choice4" value="0" /><input type="checkbox" name="q17126:4_choice4" value="1" id="q17126:4_choice4" aria-labelledby="q17126:4_choice4_label" /><div class="d-flex w-auto" id="q17126:4_choice4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 4 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 12.</p><br><p></p></div></div> </div>
+<div class="r1"><input type="hidden" name="q17126:4_choice5" value="0" /><input type="checkbox" name="q17126:4_choice5" value="1" id="q17126:4_choice5" aria-labelledby="q17126:4_choice5_label" checked="checked" /><div class="d-flex w-auto" id="q17126:4_choice5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p>The Test object from line 4 is first
+eligible for garbage collection immediately</p>
+
+<p>following line 9.</p><br><p></p></div></div> </div>
+</div></fieldset></div></div></div><div id="question-17126-5" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">15</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:5_:flagged" value="0" /><input type="hidden" value="qaid=203356&amp;qubaid=17126&amp;qid=4193&amp;slot=5&amp;checksum=29394abbb26795f20b809cfef90c4203&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:5_:flaggedcheckbox" name="q17126:5_:flagged" value="1" /><label id="q17126:5_:flaggedlabel" for="q17126:5_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:5_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:5_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int
+x;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int
+y;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public
+static void main(String[] args){</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test
+t=new Test();</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t.y=10;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(t.x+t.y);</span></p>
+
+<p><span lang="EN-US">&nbsp;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 15</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:5_answer" value="0" id="q17126:5_answer0" aria-labelledby="q17126:5_answer0_label" /><div class="d-flex w-auto" id="q17126:5_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation fails</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:5_answer" value="1" id="q17126:5_answer1" aria-labelledby="q17126:5_answer1_label" checked="checked" /><div class="d-flex w-auto" id="q17126:5_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">10</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:5_answer" value="2" id="q17126:5_answer2" aria-labelledby="q17126:5_answer2_label" /><div class="d-flex w-auto" id="q17126:5_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Garbage value</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:5_answer" value="3" id="q17126:5_answer3" aria-labelledby="q17126:5_answer3_label" /><div class="d-flex w-auto" id="q17126:5_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"></p><p></p><span lang="EN-US">0</span><br><p></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:5_answer" value="4" id="q17126:5_answer4" aria-labelledby="q17126:5_answer4_label" /><div class="d-flex w-auto" id="q17126:5_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run time exception</span><br></p></div></div> </div>
+</div><div id="q17126:5_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:5_answer" id="q17126:5_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:5_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-13" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">16</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:13_:flagged" value="0" /><input type="hidden" value="qaid=203364&amp;qubaid=17126&amp;qid=4201&amp;slot=13&amp;checksum=4562cd6f46cd8de2517785a5cb7a56de&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:13_:flaggedcheckbox" name="q17126:13_:flagged" value="1" /><label id="q17126:13_:flaggedlabel" for="q17126:13_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:13_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:13_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test </span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">public static
+void main(String[] args)</span></p>
+
+<p><span lang="EN-US">{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; int a = 4;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; double b = 8;</span></p>
+
+<p><span lang="EN-US">&nbsp;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; System.out.println(a+b+"KMIT " );</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 16</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:13_answer" value="0" id="q17126:13_answer0" aria-labelledby="q17126:13_answer0_label" /><div class="d-flex w-auto" id="q17126:13_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">12KMIT</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:13_answer" value="1" id="q17126:13_answer1" aria-labelledby="q17126:13_answer1_label" /><div class="d-flex w-auto" id="q17126:13_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">48.0KMIT</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:13_answer" value="2" id="q17126:13_answer2" aria-labelledby="q17126:13_answer2_label" checked="checked" /><div class="d-flex w-auto" id="q17126:13_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">12.0KMIT</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:13_answer" value="3" id="q17126:13_answer3" aria-labelledby="q17126:13_answer3_label" /><div class="d-flex w-auto" id="q17126:13_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">48KMIT</span><br></p></div></div> </div>
+</div><div id="q17126:13_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:13_answer" id="q17126:13_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:13_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-16" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">17</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:16_:flagged" value="0" /><input type="hidden" value="qaid=203367&amp;qubaid=17126&amp;qid=4204&amp;slot=16&amp;checksum=507aa176c840ae80424612df847b4078&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:16_:flaggedcheckbox" name="q17126:16_:flagged" value="1" /><label id="q17126:16_:flaggedlabel" for="q17126:16_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:16_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:16_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test{</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp; public static
+void main(String[] args) </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; float f=23.11f;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; short s=(short)f;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; System.out.println(s);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<span lang="EN-US">}</span><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 17</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:16_answer" value="0" id="q17126:16_answer0" aria-labelledby="q17126:16_answer0_label" checked="checked" /><div class="d-flex w-auto" id="q17126:16_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">23</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:16_answer" value="1" id="q17126:16_answer1" aria-labelledby="q17126:16_answer1_label" /><div class="d-flex w-auto" id="q17126:16_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">23.0</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:16_answer" value="2" id="q17126:16_answer2" aria-labelledby="q17126:16_answer2_label" /><div class="d-flex w-auto" id="q17126:16_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">0</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:16_answer" value="3" id="q17126:16_answer3" aria-labelledby="q17126:16_answer3_label" /><div class="d-flex w-auto" id="q17126:16_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails</span><br></p></div></div> </div>
+</div><div id="q17126:16_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:16_answer" id="q17126:16_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:16_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-15" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">18</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:15_:flagged" value="0" /><input type="hidden" value="qaid=203366&amp;qubaid=17126&amp;qid=4203&amp;slot=15&amp;checksum=f3f180ece4905e3d338ba511a1af3482&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:15_:flaggedcheckbox" name="q17126:15_:flagged" value="1" /><label id="q17126:15_:flaggedlabel" for="q17126:15_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:15_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:15_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test{</span></p>
+
+<p><span lang="EN-US">&nbsp; public static
+void main(String[] args) {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; byte
+a=3;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int
+b=10;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float
+c=100.1f;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; byte
+d;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d=b+a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Line-7</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b=
+(int)a;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Line-8</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a+=7;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Line-9</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(d);&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;//Line-10</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(b);&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Line-11 </span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;
+System.out.println(a);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Line-12</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">&nbsp;}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 18</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:15_answer" value="0" id="q17126:15_answer0" aria-labelledby="q17126:15_answer0_label" checked="checked" /><div class="d-flex w-auto" id="q17126:15_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 7</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:15_answer" value="1" id="q17126:15_answer1" aria-labelledby="q17126:15_answer1_label" /><div class="d-flex w-auto" id="q17126:15_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 12</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:15_answer" value="2" id="q17126:15_answer2" aria-labelledby="q17126:15_answer2_label" /><div class="d-flex w-auto" id="q17126:15_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 8</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:15_answer" value="3" id="q17126:15_answer3" aria-labelledby="q17126:15_answer3_label" /><div class="d-flex w-auto" id="q17126:15_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 11</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:15_answer" value="4" id="q17126:15_answer4" aria-labelledby="q17126:15_answer4_label" /><div class="d-flex w-auto" id="q17126:15_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 10</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:15_answer" value="5" id="q17126:15_answer5" aria-labelledby="q17126:15_answer5_label" /><div class="d-flex w-auto" id="q17126:15_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails at line 9</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:15_answer" value="6" id="q17126:15_answer6" aria-labelledby="q17126:15_answer6_label" /><div class="d-flex w-auto" id="q17126:15_answer6_label" data-region="answer-label"><span class="answernumber">g. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+succeeds</span><br></p></div></div> </div>
+</div><div id="q17126:15_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:15_answer" id="q17126:15_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:15_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-20" class="que multichoice deferredfeedback answersaved"><div class="info"><h3 class="no">Question <span class="qno">19</span></h3><div class="state">Answer saved</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:20_:flagged" value="0" /><input type="hidden" value="qaid=203371&amp;qubaid=17126&amp;qid=4208&amp;slot=20&amp;checksum=c85b53a5cc4360a7ce09abdea7d4540f&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:20_:flaggedcheckbox" name="q17126:20_:flagged" value="1" /><label id="q17126:20_:flaggedlabel" for="q17126:20_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:20_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:20_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;"></p><p><span lang="EN-US">class Test {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; public
+static void main(String [] args) {</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int
+a=10;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(++a
+= 11)</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;System.out.println(a);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;++a;</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;System.out.println(a);</span></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p><span lang="EN-US">}</span></p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 19</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:20_answer" value="0" id="q17126:20_answer0" aria-labelledby="q17126:20_answer0_label" /><div class="d-flex w-auto" id="q17126:20_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">10</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:20_answer" value="1" id="q17126:20_answer1" aria-labelledby="q17126:20_answer1_label" /><div class="d-flex w-auto" id="q17126:20_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Run
+time exception</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:20_answer" value="2" id="q17126:20_answer2" aria-labelledby="q17126:20_answer2_label" /><div class="d-flex w-auto" id="q17126:20_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">12</span><br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:20_answer" value="3" id="q17126:20_answer3" aria-labelledby="q17126:20_answer3_label" /><div class="d-flex w-auto" id="q17126:20_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">11</span><br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:20_answer" value="4" id="q17126:20_answer4" aria-labelledby="q17126:20_answer4_label" checked="checked" /><div class="d-flex w-auto" id="q17126:20_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;"><span lang="EN-US">Compilation
+fails</span><br></p></div></div> </div>
+</div><div id="q17126:20_clearchoice" class="qtype_multichoice_clearchoice"><input type="radio" name="q17126:20_answer" id="q17126:20_answer-1" value="-1" class="sr-only" aria-hidden="true" /><label for="q17126:20_answer-1"><a tabindex="0" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div id="question-17126-9" class="que multichoice deferredfeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">20</span></h3><div class="state">Not yet answered</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable"><input type="hidden" name="q17126:9_:flagged" value="0" /><input type="hidden" value="qaid=203360&amp;qubaid=17126&amp;qid=4197&amp;slot=9&amp;checksum=d7d6a42daff0f2a3b8e22216afaea25e&amp;sesskey=nO2tqMV9JQ&amp;newstate=" class="questionflagpostdata" /><input type="checkbox" id="q17126:9_:flaggedcheckbox" name="q17126:9_:flagged" value="1" /><label id="q17126:9_:flaggedlabel" for="q17126:9_:flaggedcheckbox"><img src="http://10.11.52.100/theme/image.php/boost/core/1733729919/i/unflagged" alt="" class="questionflagimage" id="q17126:9_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q17126:9_:sequencecheck" value="1" /><div class="qtext"><p dir="ltr" style="text-align: left;">Which represent the order in which the following
+statements can be assembled into a program that will compile successfully?
+(Choose all that apply)<br></p><p dir="ltr" style="text-align: left;"></p><p>A: class Rabbit {}</p>
+
+<p>B: import java.util.*;</p>
+
+<p>C: package animals;</p><br><p></p></div><fieldset class="ablock no-overflow visual-scroll-x"><legend class="prompt h6 font-weight-normal sr-only"><span class="sr-only">Question 20</span> Answer</legend><div class="answer"><div class="r0"><input type="radio" name="q17126:9_answer" value="0" id="q17126:9_answer0" aria-labelledby="q17126:9_answer0_label" /><div class="d-flex w-auto" id="q17126:9_answer0_label" data-region="answer-label"><span class="answernumber">a. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A, C<br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:9_answer" value="1" id="q17126:9_answer1" aria-labelledby="q17126:9_answer1_label" /><div class="d-flex w-auto" id="q17126:9_answer1_label" data-region="answer-label"><span class="answernumber">b. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A, B<br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:9_answer" value="2" id="q17126:9_answer2" aria-labelledby="q17126:9_answer2_label" /><div class="d-flex w-auto" id="q17126:9_answer2_label" data-region="answer-label"><span class="answernumber">c. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">C, A<br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:9_answer" value="3" id="q17126:9_answer3" aria-labelledby="q17126:9_answer3_label" /><div class="d-flex w-auto" id="q17126:9_answer3_label" data-region="answer-label"><span class="answernumber">d. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">B, A<br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:9_answer" value="4" id="q17126:9_answer4" aria-labelledby="q17126:9_answer4_label" /><div class="d-flex w-auto" id="q17126:9_answer4_label" data-region="answer-label"><span class="answernumber">e. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A, B, C<br></p></div></div> </div>
+<div class="r1"><input type="radio" name="q17126:9_answer" value="5" id="q17126:9_answer5" aria-labelledby="q17126:9_answer5_label" /><div class="d-flex w-auto" id="q17126:9_answer5_label" data-region="answer-label"><span class="answernumber">f. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">C, B, A<br></p></div></div> </div>
+<div class="r0"><input type="radio" name="q17126:9_answer" value="6" id="q17126:9_answer6" aria-labelledby="q17126:9_answer6_label" /><div class="d-flex w-auto" id="q17126:9_answer6_label" data-region="answer-label"><span class="answernumber">g. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">B, C, A<br></p></div></div> </div>
+</div><div id="q17126:9_clearchoice" class="qtype_multichoice_clearchoice sr-only" aria-hidden="true"><input type="radio" name="q17126:9_answer" id="q17126:9_answer-1" value="-1" class="sr-only" aria-hidden="true" checked="checked" /><label for="q17126:9_answer-1"><a tabindex="-1" role="button" class="btn btn-link ml-3 mt-n1" href="#">Clear my choice</a></label></div></fieldset></div></div></div><div class="submitbtns"><input type="submit" name="next" value="Finish attempt ..." class="mod_quiz-next-nav btn btn-primary" id="mod_quiz-next-nav" /></div><input type="hidden" name="attempt" value="17060" /><input type="hidden" name="thispage" value="0" id="followingpage" /><input type="hidden" name="nextpage" value="-1" /><input type="hidden" name="timeup" value="0" id="timeup" /><input type="hidden" name="sesskey" value="nO2tqMV9JQ" /><input type="hidden" name="scrollpos" value="" id="scrollpos" /><input type="hidden" name="slots" value="7,17,18,11,19,10,2,8,14,12,6,3,1,4,5,13,16,15,20,9" /></div></form><div id="connection-error" style="display: none;" role="alert"><p>Network connection lost. (Autosave failed).</p>
+
+<p>Make a note of any responses entered on this page in the last few minutes, then try to re-connect.</p>
+
+<p>Once connection has been re-established, your responses should be saved and this message will disappear.</p>
+</div><div id="connection-ok" style="display: none;" role="alert"><p>Network connection restored. You may continue safely.</p>
+</div></div>
+                        
+                        
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="page-footer" class="footer-popover bg-white">
+            <div data-region="footer-container-popover">
+                <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer">
+                    <i class="icon fa fa-question fa-fw " aria-hidden="true"  ></i>
+                </button>
+            </div>
+            <div class="footer-content-popover container" data-region="footer-content-popover">
+                <!--removing contact site support link from footer start-->
+                    <!--<div class="footer-section p-3 border-bottom">
+        
+        
+                            <div>
+                            <a href="http://10.11.52.100/user/contactsitesupport.php"><i class="icon fa fa-envelope-o fa-fw " aria-hidden="true"  ></i>Contact site support</a>
+                            </div>
+                    </div>-->
+                <!--removing contact site support link from footer start-->
+                <div class="footer-section p-3 border-bottom">
+                    <div class="logininfo">
+                        <div class="logininfo">You are logged in as PEREPU KRISHNA KAVYA SRI KMIT (<a href="http://10.11.52.100/login/logout.php?sesskey=nO2tqMV9JQ">Log out</a>)</div>
+                    </div>
+                    <div class="tool_usertours-resettourcontainer">
+                    </div>
+        
+                    
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'http://10.11.52.100/lib/requirejs.php/1733729919/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://10.11.52.100/lib/javascript.php/1733729919/lib/jquery/jquery-3.6.0.min',
+        jqueryui: 'http://10.11.52.100/lib/javascript.php/1733729919/lib/jquery/ui-1.13.0/jquery-ui.min',
+        jqueryprivate: 'http://10.11.52.100/lib/javascript.php/1733729919/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="http://10.11.52.100/lib/javascript.php/1733729919/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('core/network'); require(['core/network'], function(amd) {amd.keepalive(2880, 0, "sessionerroruser", "error"); M.util.js_complete('core/network');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-67ac827c0cc62-navbar-nav'));
+    });
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+require(['theme_boost/drawers']);
+;
+
+require(['theme_boost/drawers']);
+;
+
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-7"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-7", "q17126:7_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-17"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-17", "q17126:17_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-18"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-18", "q17126:18_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-11"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-11", "q17126:11_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-19"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-19", "q17126:19_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-10"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-2"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-2", "q17126:2_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-8"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-8", "q17126:8_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-14"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-14", "q17126:14_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-12"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-12", "q17126:12_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-6"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-6", "q17126:6_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-3"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-1"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-1", "q17126:1_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-4"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-5"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-5", "q17126:5_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-13"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-13", "q17126:13_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-16"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-16", "q17126:16_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-15"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-15", "q17126:15_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-20"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-20", "q17126:20_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-17126-9"); M.util.js_complete('qtype_multichoice/answers');});;
+M.util.js_pending('qtype_multichoice/clearchoice'); require(['qtype_multichoice/clearchoice'], function(amd) {amd.init("question-17126-9", "q17126:9_clearchoice"); M.util.js_complete('qtype_multichoice/clearchoice');});;
+M.util.js_pending('core_form/submit'); require(['core_form/submit'], function(amd) {amd.init("mod_quiz-next-nav"); M.util.js_complete('core_form/submit');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(6383, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"trace"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.11.52.100\/lib\/javascript.php\/1733729919\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine"]}});
+
+//]]>
+</script>
+<script src="http://10.11.52.100/lib/javascript.php/1733729919/local/student/customchanges.js"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+Y.use("moodle-mod_quiz-autosave",function() {M.mod_quiz.autosave.init("60");
+});
+ M.util.js_pending('random67ac827c0210c1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "http:\/\/10.11.52.100\/question\/toggleflag.php", [{"src":"http:\/\/10.11.52.100\/theme\/image.php\/boost\/core\/1733729919\/i\/unflagged","title":"Flag this question for future reference","alt":"Flagged","text":"Flag question"},{"src":"http:\/\/10.11.52.100\/theme\/image.php\/boost\/core\/1733729919\/i\/flagged","title":"Remove flag","alt":"Flagged","text":"Remove flag"}]);  M.util.js_complete('random67ac827c0210c1'); });
+ M.util.js_pending('random67ac827c0210c2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_attempt_form(Y);  M.util.js_complete('random67ac827c0210c2'); });
+ M.util.js_pending('random67ac827c0210c3'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random67ac827c0210c3'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random67ac827c0210c5'); Y.use('mod_quiz', function(Y) { M.mod_quiz.timer.init(Y, 288, false);  M.util.js_complete('random67ac827c0210c5'); });
+ M.util.js_pending('random67ac827c0210c6'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67ac827c0210c6'); });
+})();
+//]]>
+</script>
+
+                </div>
+                <div class="footer-section p-3">
+                    <div>Powered by Teleparadigm Networks</div>
+                </div>
+            </div>
+        
+            <div class="footer-content-debugging footer-dark bg-dark text-light">
+                <div class="container-fluid footer-dark-inner">
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</div>
+
+</body>
+</html>
+
+
+<script>
+//*******removing course links and added dashboard / activity name start */
+// if ($('#roles').val()) {
+    var baseUrl = 'http://10.11.52.100';
+    var url = baseUrl + '/local/student/dashboard.php';
+
+    // Remove the element with class 'page-context-header'.
+    document.querySelector('.page-context-header').remove();
+
+    var quizName = 'Quiz-1';
+
+    // Set the HTML content for the element with id 'page-navbar'.
+
+    document.getElementById('page-navbar').innerHTML = "<div id='navbar' style='padding: 2% 6% 1% 2%; display: flex; align-items: center;'>  <span style='margin: 0 5px;'></span> <div style='white-space: nowrap; overflow: hidden; width: 400px;>" + quizName + "</div> </div>";
+    // Set the 'href' attribute for the element with id 'dlink'.
+    document.getElementById('dlink').href = url;
+// }
+//*******removing course links and added dashboard / activity name end */
+</script>
+<style>
+/* #page-content {
+width: 100vw;
+margin-left: -30%;
+} */
+#topofscroll {
+max-width: 100%!important;
+margin-top: -2%!important;
+}
+</style>
+
+
+
