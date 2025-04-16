@@ -1,0 +1,10 @@
+
+☑️ 𝐖𝐞𝐞𝐤 𝟏-𝟐: 𝐀𝐫𝐫𝐚𝐲𝐬, 𝐒𝐭𝐫𝐢𝐧𝐠𝐬, 𝐌𝐚𝐭𝐡 – Prefix sum, sliding window, two pointers, hashing
+☑️ 𝐖𝐞𝐞𝐤 𝟑-𝟒: 𝐋𝐢𝐧𝐤𝐞𝐝 𝐋𝐢𝐬𝐭, 𝐒𝐭𝐚𝐜𝐤, 𝐐𝐮𝐞𝐮𝐞 – Singly/doubly LL, fast-slow pointers, stack with min/max, queue variations
+☑️ 𝐖𝐞𝐞𝐤 𝟓: 𝐓𝐫𝐞𝐞𝐬 & 𝐁𝐢𝐧𝐚𝐫𝐲 𝐓𝐫𝐞𝐞𝐬 – Preorder/Inorder/Postorder, BFS/DFS, diameter, balanced trees
+☑️ 𝐖𝐞𝐞𝐤 𝟔: 𝐁𝐒𝐓 & 𝐓𝐫𝐢𝐞𝐬 – Floor/Ceil, kth smallest, delete in BST, prefix search
+☑️ 𝐖𝐞𝐞𝐤 𝟕: 𝐑𝐞𝐜𝐮𝐫𝐬𝐢𝐨𝐧 & 𝐁𝐚𝐜𝐤𝐭𝐫𝐚𝐜𝐤𝐢𝐧𝐠 – Subsets, permutations, N-Queens, Sudoku solver
+☑️ 𝐖𝐞𝐞𝐤 𝟖: 𝐇𝐞𝐚𝐩𝐬 & 𝐏𝐫𝐢𝐨𝐫𝐢𝐭𝐲 𝐐𝐮𝐞𝐮𝐞 – Median of stream, Top K elements, custom comparator
+☑️ 𝐖𝐞𝐞𝐤 𝟗: 𝐆𝐫𝐚𝐩𝐡𝐬 (𝐁𝐅𝐒, 𝐃𝐅𝐒) – Detect cycle, connected components, bipartite, topological sort
+☑️ 𝐖𝐞𝐞𝐤 𝟏𝟎: 𝐆𝐫𝐚𝐩𝐡𝐬 (𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝) – Dijkstra, Prim’s, Kruskal’s, Union Find, shortest path variants
+☑️ 𝐖𝐞𝐞𝐤 𝟏𝟏: 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 – 1D DP (Linear DP), 2D/Matrix DP, DP on Strings, Subsequences, Bitmask DP, Trees, Graphs, Interval DP, MCM Problems, Game Theory DP
